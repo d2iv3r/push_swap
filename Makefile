@@ -18,9 +18,9 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-SRC = libft.c ft_atoi_v2.c ft_split.c ft_substr.c ft_isdigit.c ft_strncmp.c get_pos.c push_swap.c check_argv.c utils_lst.c utils.c moves.c sorting.c operations.c
+SRC = utils/libft.c utils/ft_atoi_v2.c utils/ft_split.c utils/ft_substr.c utils/ft_isdigit.c utils/ft_strncmp.c get_pos.c push_swap.c check_argv.c utils/utils_lst.c utils/utils.c moves.c sorting.c operations.c
 
-SRC_BNS = libft.c ft_atoi_v2.c ft_split.c ft_substr.c ft_isdigit.c check_argv.c utils_lst.c utils.c ft_strjoin_v2.c ft_strncmp.c operations.c checker.c
+SRC_BNS = utils/libft.c utils/ft_atoi_v2.c utils/ft_split.c utils/ft_substr.c utils/ft_isdigit.c check_argv.c utils/utils_lst.c utils/utils.c utils/ft_strjoin_v2.c utils/ft_strncmp.c operations.c checker.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -42,7 +42,7 @@ $(BONUS) : $(OBJ_BNS) checker.h
 %.o : %.c checker.h
 	$(CC) -g -c $(CFLAGS) $< -o $@
 
-clean : 
+clean :
 	rm -rf $(OBJ) $(OBJ_BNS)
 
 fclean : clean
