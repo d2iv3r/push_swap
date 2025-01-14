@@ -32,7 +32,7 @@ The program must output the sequence of operations required to sort the input.
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/push_swap.git
+   git clone git@github.com:d2iv3r/push_swap.git
    cd push_swap
    ```
 2. Build the program:
@@ -64,4 +64,3 @@ To sort a stack of integers, provide them as arguments:
    ra
    pa
    ```
-
